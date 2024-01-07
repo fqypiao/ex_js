@@ -72,6 +72,7 @@ var html=this.responseText;
 var info={};
 info.numb=numb;
 info.hash=hash;
+console.log(html.match(/id="img" src="(.*?)"/));
 info.show=html.match(/id="img" src="(.*?)"/)[1];
 info.show=info.show.substr(0,info.show.lastIndexOf('/')+1);
 info.full=html.match(/href="(https:\/\/e[x|-]hentai.org\/fullimg.php(.*?))"/);
