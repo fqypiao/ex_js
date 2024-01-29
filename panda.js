@@ -79,6 +79,7 @@ function panda_sniffimg(run, func) {
 };
 
 function panda_loadpage(gid, token, numb, exec) {
+    console.log(gid);
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://' + document.domain + '/g/' + gid + '/' + token + '/?p=' + (numb - 1), true);
     xhr.onerror = function() {
