@@ -276,6 +276,15 @@ function panda_plusfunc() {
     var gtbn = document.getElementById('cdiv');
     gtbn.parentNode.insertBefore(code, gtbn);
 };
+var newElement = document.createElement('p');
+newElement.classList.add('ths');
+newElement.textContent = 10;
+var newElement2 = document.createElement('p');
+newElement2.classList.add('ths');
+newElement2.textContent = 'Normal';
+var container = document.getElementById('panda_plus');
+container.appendChild(newElement);
+container.appendChild(newElement2);
 var panda = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1];
 var panda_zhcn = (navigator.language && navigator.language == 'zh-CN') ? true : false;
 var panda_lang_0 = panda_zhcn ? '网络错误，是否重试？' : 'Network error, retry?';
