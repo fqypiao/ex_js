@@ -144,7 +144,7 @@ function panda_showlist() {
     if (panda_pageconf == null) {
         var newElement = document.createElement('p');
         newElement.classList.add('ths');
-        newElement.textContent = 10;
+        newElement.textContent = 2;
         var newElement2 = document.createElement('p');
         newElement2.classList.add('ths');
         newElement2.textContent = 'Normal';
