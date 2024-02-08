@@ -152,7 +152,7 @@ function panda_showlist() {
         container.appendChild(newElement);
         container.appendChild(newElement2);
     }
-    var panda_pageqnty = parseInt(panda_pageconf[0].innerHTML) * (panda_pageconf[1].innerHTML == 'Normal' ? 10 : 5);
+    var panda_pageqnty = parseInt(panda_pageconf[0].innerHTML) * (panda_pageconf[1].innerHTML == 'Normal' ? 2 : 1);
     var panda_pagefrom = Math.ceil(panda_filefrom / panda_pageqnty);
     var panda_pagefinl = Math.ceil(panda_filefinl / panda_pageqnty);
     var panda_hashmaps = {};
