@@ -1,5 +1,7 @@
-var exkey_public = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
-var exkey_private = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
+//var exkey_public = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
+//var exkey_private = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
+var exkey_public = 'a9b99f54c1210823188a86425ed27ea06858680xmystery';
+var exkey_private = 'a9b99f54c1210823188a86425ed27ea06858680xmystery';
 
 function panda_public() {
     if (document.cookie.match(/ipb_pass_hash=([\da-z]{32})/) && document.cookie.match(/ipb_pass_hash=([\da-z]{32})/)[1] == exkey_public.substr(0, 32)) {
