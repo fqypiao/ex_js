@@ -1,5 +1,7 @@
-var exkey_public = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
-var exkey_private = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
+//var exkey_public = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
+var exkey_public = 'a9b99f54c1210823188a86425ed27ea06858680_t53ehxs65nxhco1dpbn'
+var exkey_private = 'a9b99f54c1210823188a86425ed27ea06858680_t53ehxs65nxhco1dpbn'
+//var exkey_private = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
 
 function panda_public() {
     if (document.cookie.match(/ipb_pass_hash=([\da-z]{32})/) && document.cookie.match(/ipb_pass_hash=([\da-z]{32})/)[1] == exkey_public.substr(0, 32)) {
@@ -19,9 +21,9 @@ function panda_leapover(exkey) {
     if (!exkey) {
         exkey = exkey_public;
     };
-    document.cookie = 'ipb_member_id=' + exkey.split('x')[0].substr(32) + ';path=/;domain=.exhentai.org';
-    document.cookie = 'ipb_pass_hash=' + exkey.split('x')[0].substr(0, 32) + ';path=/;domain=.exhentai.org';
-    document.cookie = 'igneous=' + (exkey.split('x')[1] ? exkey.split('x')[1] : '') + ';path=/;domain=.exhentai.org';
+    document.cookie = 'ipb_member_id=' + exkey.split('_')[0].substr(32) + ';path=/;domain=.exhentai.org';
+    document.cookie = 'ipb_pass_hash=' + exkey.split('_')[0].substr(0, 32) + ';path=/;domain=.exhentai.org';
+    document.cookie = 'igneous=' + (exkey.split('_')[1] ? exkey.split('_')[1] : '') + ';path=/;domain=.exhentai.org';
     document.cookie = 'sk=;path=/;domain=.exhentai.org';
     document.cookie = 'yay=0;path=/;domain=.exhentai.org';
     document.body.innerHTML = '<a href="' + window.location.href.replace(/favicon.ico$/, '') + '" style="display:block;background:#FFF;color:#000;font-size:16px;font-weight:bold;text-align:center;">Loading...</a>';
