@@ -92,7 +92,7 @@ function panda_loadpage(gid, token, numb, exec) {
     xhr.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
             var info = {};
-            this.responseText.match(/<div class="gdt[m|l]"(.*?)>(.*?)https:\/\/e[x|-]hentai\.org\/s\/(\w+)\/(\d+)-(\d+)(.*?)<\/div>/g).forEach(function(value) {
+            this.responseText.match(/<a href="https:\/\/e[x|-]hentai\.org\/s\/(\w+)\/(\d+)-(\d+)(.*?)/g).forEach(function(value) {
                 var preg = value.match(/https:\/\/e[x|-]hentai\.org\/s\/(\w+)\/(\d+)-(\d+)/);
                 info[preg[3]] = preg[1];
             });
