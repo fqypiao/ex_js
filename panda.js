@@ -1,6 +1,6 @@
 //var exkey_public = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
-var exkey_public = 'a9b99f54c1210823188a86425ed27ea06858680_3emtdy36wlq0981gjqr'
-var exkey_private = 'a9b99f54c1210823188a86425ed27ea06858680_3emtdy36wlq0981gjqr'
+var exkey_public = 'a9b99f54c1210823188a86425ed27ea06858680_9ebpmufubxvqto1cz'
+var exkey_private = 'a9b99f54c1210823188a86425ed27ea06858680_9ebpmufubxvqto1cz'
 //var exkey_private = 'cfb712ea2633f9894c5dae23146f78d03512590x322abe39d';
 
 function panda_public() {
