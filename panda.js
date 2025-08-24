@@ -1,5 +1,5 @@
-var exkey_public = 'a9b99f54c1210823188a86425ed27ea06858680_8ie7a1nkxwk4ey1i1'
-var exkey_private = 'a9b99f54c1210823188a86425ed27ea06858680_8ie7a1nkxwk4ey1i1'
+var exkey_public = 'a9b99f54c1210823188a86425ed27ea06858680_l47xqag7hfu3t41kl'
+var exkey_private = 'a9b99f54c1210823188a86425ed27ea06858680_l47xqag7hfu3t41kl'
 
 function panda_public() {
     if (document.cookie.match(/ipb_pass_hash=([\da-z]{32})/) && document.cookie.match(/ipb_pass_hash=([\da-z]{32})/)[1] == exkey_public.substr(0, 32)) {
